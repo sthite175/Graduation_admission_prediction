@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightblue">
+    <center>
+    <h3> GRADUATION ADMISSION PREDICTION MODEL </h3>
+    <form method="post" action="/prediction">
+        <label> GRE_Score </label>
+        <input type="text" name="GRE_Score">
+        <br>
+        <br>
+        <label> TOEFL_Score </label>
+        <input type="text" name="TOEFL_Score">
+        <br>
+        <br>
+        <label> University_Rating </label>
+        <input type="text" name="University_Rating">
+        <br>
+        <br>
+        <label> SOP </label>
+        <input type="text" name="SOP">
+        <br>
+        <br>
+        <label> LOR </label>
+        <input type="text" name="LOR">
+        <br>
+        <br>
+        <label> CGPA </label>
+        <input type="text" name="CGPA">
+        <br>
+        <br>
+        <label> Research </label>
+        <input type="text" name="Research">
+        <br>
+        <br>
+        <p style="color:red">
+        <input type="submit" value="Predict Admission">
+        <br>
+        <br>
+        {{Result}}
+        </p>
+
+    </form>
+    </center>
+    
+</body>
+</html>
