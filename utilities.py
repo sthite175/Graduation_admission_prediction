@@ -19,12 +19,11 @@ def predict_admission(data):
     pred_output=model.predict([pred_input])[0]
 
     if pred_output==1:
-        pred_output="Getting Chances of Admission"
+        pred_output="Congratulations!  You will get Admission"
     elif pred_output==0:
        pred_output="No Chance of Admission"
 
     return pred_output
-
 
 
 # GRE_Score=337
@@ -35,5 +34,3 @@ def predict_admission(data):
 # CGPA=9.65
 # Research=1
 
-# pred_input=np.array([GRE_Score,TOEFL_Score,University_Rating,SOP,LOR,CGPA,Research])
-# pred_output=model.predict([pred_input])[0]
